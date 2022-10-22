@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- TODO CSS style sheet link -->
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Standard ToDo List</title>
+	</head>
+	<body>
+		<div class="container">
+			<main class="app">
+				<section class="left">
+					<div class="dots">
+						<div class="dot red"></div>
+						<div class="dot yellow"></div>
+						<div class="dot green"></div>
+					</div>
+					<div class="top-left">
+						<div class="user flex gap">
+							<div class="block">
+								<p class="abbr">CS</p>
+							</div>
+							<p class="name">CEN Smart</p>
+						</div>
+						<div class="search flex">
+							<ion-icon name="search-outline"></ion-icon>
+							<input type="search" name="search" id="search" placeholder="Search" />
+						</div>
+						<div class="day flex gap">
+							<ion-icon name="sunny-outline"></ion-icon>
+							<p>My Day</p>
+						</div>
+						<div class="star flex gap">
+							<ion-icon name="star-outline"></ion-icon>
+							<p>Important</p>
+						</div>
+						<div class="plan">
+							<ion-icon name="calendar-clear-outline"></ion-icon>
+							<p>Planned</p>
+							<span class="gray ml-auto">4</span>
+						</div>
+						<div class="all">
+							<ion-icon name="infinite-outline"></ion-icon>
+
+							<p>All</p>
+							<span class="gray ml-auto">5</span>
+						</div>
+						<div class="completed flex gap">
+							<ion-icon name="checkmark-circle-outline"></ion-icon>
+							<p>Completed</p>
+						</div>
+						<div class="assigned flex gap">
+							<ion-icon name="person-outline"></ion-icon>
+
+							<p>Assigned to me</p>
+						</div>
+						<div class="task">
+							<ion-icon name="home-outline"></ion-icon>
+
+							<p>Tasks</p>
+							<span class="gray ml-auto">1</span>
+						</div>
+						<div class="group flex">
+							<ion-icon name="wallet-outline"></ion-icon>
+							<p>Untitled group</p>
+							<ion-icon class="gray ml-auto" name="chevron-down-outline"></ion-icon>
+						</div>
+						<div class="list flex gap">
+							<ion-icon name="list-outline"></ion-icon>
+							<p>CEN Smart</p>
+							<span class="gray ml-auto">4</span>
+						</div>
+					</div>
+					<div class="newlist">
+						<ion-icon name="add-outline"></ion-icon>
+						<p>New List</p>
+						<ion-icon class="ml-auto" name="person-add-outline"></ion-icon>
+					</div>
+				</section>
+				<section class="right">
+					<div class="right-nav">
+						<h1 class="primary">ToDo List</h1>
+						<div class="btn btn-group">
+							<ion-icon name="person-add-outline"></ion-icon>
+							<ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+						</div>
+					</div>
+					<div class="row">
+						<div class="four-in-one">
+							<ion-icon name="ellipse-outline" class="circle"></ion-icon>
+							<div class="duty">
+								<p class="letter">write Friday Update</p>
+								<p class="day">
+									<ion-icon name="calendar-clear-outline"></ion-icon
+									><span class="text">Today</span>
+								</p>
+							</div>
+							<ion-icon name="star-outline" class="star-right"></ion-icon>
+						</div>
+						<div class="four-in-one">
+							<ion-icon name="ellipse-outline" class="circle"></ion-icon>
+							<div class="duty">
+								<p class="letter">follow up with syndication contracts</p>
+								<p class="day">
+									<ion-icon name="calendar-clear-outline"></ion-icon
+									><span class="text">Today</span>
+								</p>
+							</div>
+							<ion-icon name="star-outline" class="star-right"></ion-icon>
+						</div>
+						<div class="four-in-one">
+							<ion-icon name="ellipse-outline" class="circle"></ion-icon>
+							<div class="duty">
+								<p class="letter">write about time blocking</p>
+								<p class="day">
+									<ion-icon name="calendar-clear-outline"></ion-icon
+									><span class="text">Today</span>
+								</p>
+							</div>
+							<ion-icon name="star-outline" class="star-right"></ion-icon>
+						</div>
+						<div class="four-in-one">
+							<ion-icon name="ellipse-outline" class="circle"></ion-icon>
+							<div class="duty">
+								<p class="letter">make a fictional items for to do list</p>
+								<p class="day">
+									<ion-icon name="calendar-clear-outline"></ion-icon
+									><span class="text">Today</span>
+								</p>
+							</div>
+							<ion-icon name="star-outline" class="star-right"></ion-icon>
+						</div>
+					</div>
+					<div class="add-task">
+						<ion-icon name="add-outline"></ion-icon>
+						<p>Add a Task</p>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- TODO Ionsicon script -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
