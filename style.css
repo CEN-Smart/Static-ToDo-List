@@ -190,6 +190,9 @@ body {
 .list {
 	color: #999;
 }
+.m-left {
+	margin-left: auto;
+}
 .right {
 	background-image: linear-gradient(
 			to bottom,
@@ -271,7 +274,7 @@ body {
 .circle,
 .newlist p {
 	font-size: 1.6rem;
-	color: #222;
+	color: #777;
 }
 .row {
 	display: flex;
@@ -286,18 +289,33 @@ body {
 	-o-border-radius: 3px;
 	border-radius: 3px;
 	display: flex;
-	padding: 1rem;
+	padding: 0.6rem 0.8rem;
 	gap: 1.2rem;
 	align-items: center;
 	font-size: 1.6rem;
 	margin-top: auto;
-	box-shadow: inset 0 -2rem 2rem rgba(0, 0, 0, 0.3);
 	cursor: pointer;
+}
+.add-task input {
+	font-family: inherit;
+	flex: 1;
+	padding: 0.8rem;
+	box-shadow: inset 0 -2px 0 hsla(0, 0%, 100%, 0.15);
+	border: none;
+	outline: none;
+	font-size: 1.6rem;
+}
+.add-task ::-webkit-input-placeholder {
+	font-size: 1.6rem;
+	padding: 0.6rem;
+	color: #222;
+	display: inline-block;
+	text-align: center;
 }
 .add-task ion-icon,
 .newlist ion-icon {
-	--ionicon-stroke-width: 5rem;
-	font-size: 2rem;
+	--ionicon-stroke-width: 4rem;
+	font-size: 1.6rem;
 }
 
 /* Media query */
